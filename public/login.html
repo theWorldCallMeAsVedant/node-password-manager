@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <title>Login</title>
+  </head>
+
+  <style>
+    .center-div {
+      width: 80%;
+      height: auto;
+    }
+
+    .login {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 350px;
+    }
+  </style>
+
+  <body>
+    <section class="login">
+      <div class="center-div">
+        <!-- this is the form -->
+        <form action="/login" id="form" method="POST">
+          <!-- there the user enters the name of the website -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Enter the name of the website or application</label
+            >
+            <input
+              name="website"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Name of the Website"
+            />
+          </div>
+        </form>
+        <button class="btn btn-danger" type="submit" form="form">Submit</button>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
