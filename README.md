@@ -11,10 +11,10 @@ HOW TO USE THIS APPLICATION
 
 In order to use this application follow the instrucation given below :-
 
-1) -  First install mongoDB database community edition (free) or pro edition if you want there is no benefits of installing paid version so keep that in mind 
+1) -  First install mongoDB database community edition (free) or pro edition if you want , there is no benefits of installing paid version so keep that in mind ,  
 link to install mongodb - https://www.mongodb.com/try/download/community
 
-2) - Make sure you have node and npm configured and installed on machine .
+NOTE:-) - Make sure you have node and npm configured and installed on machine .
 
 2)- Start your mongoDb database  by typing "mondoDB" (In some case people configure it to start so if you have done that no need to type mongoDB , if not then carry on and type this ...)
 3)- Download or clone the zop file 
