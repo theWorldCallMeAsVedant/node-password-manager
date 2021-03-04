@@ -1,7 +1,6 @@
 {
   "name": "real-time-poll",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,14 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "mongoose": "^5.11.18"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theWorldCallMeAsVedant/node-password-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theWorldCallMeAsVedant/node-password-manager/issues"
+  },
+  "homepage": "https://github.com/theWorldCallMeAsVedant/node-password-manager#readme",
+  "description": ""
 }
