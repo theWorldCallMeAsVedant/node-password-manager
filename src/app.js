@@ -4,7 +4,7 @@ const port = 80;
 
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost/myCredentials", {
+  .connect("mongodb://localhost/credentials", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -16,6 +16,7 @@ const schema = mongoose.Schema({
   website: String,
   gmail: String,
   password: String,
+  username:String,
 });
 
 //Creating model
@@ -34,14 +35,17 @@ app.get("/", (req, res) => {
 
 // listening to sign in request
 app.post("/sign-in", (req, res) => {
+  // receiving the details of user 
   var signInpassword = req.body.password;
   var signIngmail = req.body.gmail;
   var website = req.body.website;
+  var username = req.body.username ;
 
   var details = new accountModel({
     website: website,
     gmail: signIngmail,
     password: signInpassword,
+    username:username
   });
 
   details.save();
